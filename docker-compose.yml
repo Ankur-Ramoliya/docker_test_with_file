@@ -1,0 +1,24 @@
+version: '1.1'
+
+services:
+  postgres:
+    image: postgres # pull this image from hub.docker.com
+    ports:
+      - '5432:5432'
+    environment:
+        #name=value
+        POSTGRES_USER: postgres
+        POSTGRES_DB: demo_db
+        POSTGRES_PASSWORD: password 
+
+# add multipule service at that time for this configuration file below exampl for the same.
+# services:
+#   postgres:
+#     image: postgres # pull this image from hub.docker.com
+#     ports:
+#       - '5432:5432'
+#     environment:
+#         #name=value
+#         POSTGRES_USER: postgres
+#         POSTGRES_DB: demo_db
+#         POSTGRES_PASSWORD: password
